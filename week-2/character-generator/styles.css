@@ -3,9 +3,86 @@
   Chapter 1
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+  Author:Malcolm Abdullah
+  Date:06-09-2024
+  Filename:styles.css
 */
 
 /* Your CSS goes here */
+
+/* CSS Reset*/
+body, div, form, label, input, option, button {
+  margin:0;
+  padding: 0;
+  border: 0;
+}
+
+/*style rules for body*/
+
+body{
+  background-color: #000;
+  margin: auto;
+  padding: 0%;
+  width: 80%;
+  align: center;
+}
+
+#mainContainer{
+  margin: auto;
+  padding: 4%;
+  display: block;
+  border: 2pt #f0ffff;
+}
+
+/* Style rules for form*/
+#characterForm {
+  display: block;
+  padding: 2%;
+  margin-top: 2%;
+  border: 5pt #f0ffff;
+  border-style: dashed;
+  box-shadow: 0 0 10px #ffffff;
+  text-align: center;
+  background-color: #ffa500;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24pt;
+  font-weight: bold;
+}
+input[type="text"],select {
+  width: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#generateHero {
+  background-color: #007bff;
+  color: #fff;
+  margin-top: 2%;
+  padding: 1%;
+  border: 2pt #000;
+  border-style: solid;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+#characterOutput{
+  color: #000;
+  border: 3pt #ffa500;
+  margin: 20pt auto;
+  padding: 20pt;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ffa500;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12pt;
+  font-weight: bold;
+}
