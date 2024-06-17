@@ -4,8 +4,8 @@
       Chapter case
       
       Eating Well in Season Retrieving Data from Local Storage
-      Author: 
-      Date:   
+      Author: Malcolm Abdullah
+      Date:   Jun 16th, 2024
       
       Filename: js09c.js
  */

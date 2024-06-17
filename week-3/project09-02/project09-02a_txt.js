@@ -4,8 +4,8 @@
       Project 09-02
 
       Project to read field values from web storage
-      Author: 
-      Date:   
+      Author: Malcolm Abdullah
+      Date:   Jun 16th, 2024
 
       Filename: project09-02a.js
 */
