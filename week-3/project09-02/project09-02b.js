@@ -20,4 +20,16 @@ let region = document.getElementById("region");
 let miles = document.getElementById("miles");
 let comments = document.getElementById("comments");
 
+// retrieve the value of the riderName key from session storage and store that value in the text content of the riderName object in the web page.
+// do same for the ageGroup, bikeOption, routeOption, accOption, region, miles, and comments keys.
+
+riderName.textContent = sessionStorage.riderName;
+ageGroup.textContent = sessionStorage.ageGroup;
+bikeOption.textContent = sessionStorage.bikeOption;
+routeOption.textContent = sessionStorage.routeOption;
+accOption.textContent = sessionStorage.accOption;
+region.textContent = sessionStorage.region;
+miles.textContent = sessionStorage.miles;
+comments.textContent = sessionStorage.comments;
+
 
