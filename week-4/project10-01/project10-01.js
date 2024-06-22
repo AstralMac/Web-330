@@ -4,8 +4,8 @@
       Project 10-01
 
       Project to create a drag and drop jigsaw puzzle
-      Author: 
-      Date:   
+      Author: Malcolm Abdullah   
+      Date: June 21st, 2024
 
       Filename: project10-01.js
 */

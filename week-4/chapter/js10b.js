@@ -4,8 +4,8 @@
     Chapter case
 
     Oak Top House Directions
-    Author: 
-    Date:   
+    Author: Malcolm Abdullah   
+    Date: June 21st, 2024  
 
     Filename: js10b.js
 */
