@@ -20,6 +20,7 @@ let intList = new Array(48);
 // pieceX and pieceY will contain the initial coordinates of a puzzle piece
 let pointerX, pointerY, pieceX, pieceY;
 
+
 // Sort the integers from 1 to 48 in random order
 for (let i = 0; i < 48 ; i++) {
    intList[i] = i+1;
@@ -43,3 +44,33 @@ for (let i = 0; i < 48; i++) {
 // Node list representing the puzzle pieces
 let pieces = document.querySelectorAll("div#puzzleBoard img");
 
+// "for" loop that iterate through every puzzle piece, adding an event listener
+for (let i= 0; i < pieces.length; i++) {
+  pieces[i].addEventListener("pointerdown", grabPiece);
+}
+
+// Function for grabbing piece
+function grabPiece(e) {
+  pointerX = e.clientX;
+  pointerY = e.clientY;
+  e.target.style.touchAction = "none";
+  zCounter++;
+  e.target.style.zIndex = zCounter;
+  pieceX = e.target.offsetLeft;
+  pieceY = e.target.offsetTop;
+
+  e.target.addEventListener("pointermove", movePiece);
+  e.target.addEventListener("pointerup", dropPiece);
+}
+
+function movePiece(e) {
+  let diffX = e.clientX - pointerX;
+  let diffY = e.clientY - pointerY;
+  e.target.style.left = pieceX + diffX + "px";
+  e.target.style.top = pieceY + diffY + "px";
+}
+
+function dropPiece(e) {
+  e.target.removeEventListener("pointermove", movePiece);
+  e.target.removeEventListener("pointerup", dropPiece);
+}
